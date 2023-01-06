@@ -3,9 +3,20 @@
 /* ############################### */
 
 :root {
+  /* Colors */
   --clr-dark: 230 35% 7%;
   --clr-light: 231 77% 90%;
   --clr-white: 0 0% 100%;
+
+  /* Font sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
 }
 
 /* ################### */
@@ -101,8 +112,9 @@ button {
   border: 0;
 }
 
-/* COLORS */
+/* UTILITY COLORS */
 
+/* Background utility colors */
 .bg-dark {
   background-color: hsl(var(--clr-dark));
 }
@@ -115,6 +127,7 @@ button {
   background-color: hsl(var(--clr-white));
 }
 
+/* Text utility colors */
 .text-dark {
   color: hsl(var(--clr-dark));
 }
@@ -125,4 +138,8 @@ button {
 
 .text-white {
   color: hsl(var(--clr-white));
+}
+
+.example-component {
+  background-color: hsl(var(--clr-light) / 0.2);
 }
