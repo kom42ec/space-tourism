@@ -46,7 +46,7 @@ Every project starts with CSS reset. The most important ones are box-sizing, mar
 
 ### 2. Using utility classes
 
-Generic utility classes we often use are flex, grid, and container. We can use `padding-inline` and `margin-inline` properties with a container class as a modern CSS solution. The one general utility class that I haven't used before is the "screen reader only" class which is useful when there is a button without text, for example. It is used for accessibility and it looks like this:
+Generic utility classes we often use are flex, grid, and container. We can use `padding-inline` and `margin-inline` properties with a container class as a modern CSS solution. The one generic utility class that I haven't used before is the "screen reader only" class which is useful when there is a button without text, for example. It is used for accessibility and it looks like this:
 
 ```
 .sr-only {
@@ -63,6 +63,8 @@ Generic utility classes we often use are flex, grid, and container. We can use `
 ```
 
 ### 3. Adding custom properties
+
+The main point here is that we define custom properties first and then use them to create number of utility classes which are added to elements later. Something like a mini-Tailwind approach.
 
 - Color custom properties
 
