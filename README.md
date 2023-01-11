@@ -27,7 +27,7 @@ Users should be able to:
 
 ## What I learned
 
-1. Creating general reset
+### 1. Creating general reset
 
 Every project starts with CSS reset. The most important ones are box-sizing, margin reset, media reset, form controls font reset, and percentage-based height. But we can also remove the animations for people who have turned them off, like this:
 
@@ -44,7 +44,24 @@ Every project starts with CSS reset. The most important ones are box-sizing, mar
 }
 ```
 
-- Using utility classes
+### 2. Using utility classes
+
+Generic utility classes we often use are flex, grid, and container. We can use `padding-inline` and `margin-inline` properties with a container class as a modern CSS solution. The one general utility class that I haven't used before is the "screen reader only" class which is useful when there is a button without text, for example. It is used for accessibility and it looks like this:
+
+```
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+```
+
 - Adding custom properties
 - Creating the design system
 
