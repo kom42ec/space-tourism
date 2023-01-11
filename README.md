@@ -27,7 +27,32 @@ Users should be able to:
 
 ## What I learned
 
+1. Creating general reset
+
+Every project starts with CSS reset. The most important ones are box-sizing, margin reset, media reset, form controls font reset, and percentage-based height. But we can also remove the animations for people who have turned them off, like this:
+
+```
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+```
+
+- Using utility classes
+- Adding custom properties
+- Creating the design system
+
 ## Author
 
 - Frontend Mentor
 - Twitter
+
+```
+
+```
