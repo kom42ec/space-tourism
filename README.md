@@ -62,7 +62,22 @@ Generic utility classes we often use are flex, grid, and container. We can use `
 }
 ```
 
-- Adding custom properties
+### 3. Adding custom properties
+
+- Color custom properties
+
+Here I learned how to use a little trick to tweak the alpha value when needed. First we add hsl values to custom properties like this:
+
+```
+:root {
+--clr-dark: 230 35% 7%;
+--clr-light: 231 77% 90%;
+--clr-white: 0 0% 100%;
+}
+```
+
+...and then we create a class like this: `.example { background-color: hsl( var(--clr-light) / 0.2)}` where we can tweak alpha value easily.
+
 - Creating the design system
 
 ## Author
