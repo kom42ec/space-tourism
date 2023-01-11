@@ -78,12 +78,27 @@ Here I learned how to use a little trick to tweak the alpha value when needed. F
 
 ...and then we create a class like this: `.example { background-color: hsl( var(--clr-light) / 0.2)}` where we can tweak alpha value easily.
 
+We also created utility classes for background and text colors, like this:
+
+```
+.bg-dark {
+  background-color: hsl(var(--clr-dark));
+}
+.text-white {
+  color: hsl(var(--clr-white));
+}
+```
+
 - Creating the design system
 
 ## Author
 
 - Frontend Mentor
 - Twitter
+
+```
+
+```
 
 ```
 
