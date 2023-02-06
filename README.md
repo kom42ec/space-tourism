@@ -97,11 +97,3 @@ We also created utility classes for background and text colors, like this:
 
 - Frontend Mentor
 - Twitter
-
-```
-
-```
-
-```
-
-```
